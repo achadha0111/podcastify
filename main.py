@@ -22,5 +22,5 @@ for article in range(1,len(article_links)):
     	article_text.append(paragraphs.text)
     text_for_speech = '\n\n'.join(article_text)
     tts = gTTS(text=text_for_speech, lang='en')
-    tts.save("articles/" + file_name + ".mp3")
+    tts.save(file_name + ".mp3")
 
